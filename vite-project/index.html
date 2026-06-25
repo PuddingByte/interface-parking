@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Estacionamento - Login</title>
-    <link rel="stylesheet" href="./src/styles/login.scss">
-    <script type="module" src="./src/js/login.js" defer></script>
-</head>
-<body>
-    <div id="app">
-      
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta authors="Raven and Pudding">
+        <meta name="description" content="Login created to your attendant for gerenciate parkings">
+        <title>Estacionamento - Login</title>
+        <link rel="stylesheet" href="./src/styles/global.scss">
+        <script type="module" src="./src/js/login.js" defer></script>
+    </head>
+    <body>
+        <div id="app">
+            <section class="apresentencion" id="fundo">
+                <div id="caixa">
+                    <legend id="titulo">
+                        Bem-vindo(a)!
+                    </legend>
+                    <p class="apresentencion-text">
+                        Faça o login do seu perfil com as credenciais que sua empresa te passou. Este sistema foi feito para atendentes de estacionamento <spam id="bolt">operarem e cuidarem das vagas com segurança, responsabilidade e simplicidade.</spam>
+                    </p>
+                    <p class="apresentencion-copy">
+                        <strong>@ Copyrigth 2026 - privacity politic</strong>
+                    </p>
+                </div>
+            </section>
+            <section class="login">
+                <img id="img_logo" src="public/global/Logo-Steven_s_Parking 2.svg" alt="Steve's parking logo">
+                <h1>Login de atendente</h1>
+                <form action="" method="get">
+                    <label for="email"><ion-icon name="mail"></ion-icon>Email</label>
+                    <input type="email" placeholder="exemple@gmail.com" name="email" id="email">
+                    <label for="password"><ion-icon name="lock-closed"></ion-icon>Senha</label>
+                    <input type="password" placeholder="your password" name="password" id="password">
+                    <a href="#">Esqueceu sua senha?</a>
+                    <a href="painel/index.html"><input type="button" value="Logar > "></a>
+                </form>
+            </section>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    </body>
 </html>
