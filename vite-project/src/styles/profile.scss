@@ -1,0 +1,80 @@
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #F69074;
+    font-family: Arial;
+}
+
+header.cabecalho {
+    background-color: #2C2323;
+    background-image: url("../../public/profile/banner_padrao_perfil_stevens_parking1.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    justify-content: space-between;
+}
+
+.cabecalho ion-icon {
+    color: white;
+}
+
+header img {
+    width: 240px;
+}
+
+div.informacoes {
+    background-color: #FFFAE4;
+    margin: 0 auto;
+    width: 800px;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.informacoes-pessoais ion-icon {
+    color: blue;
+}
+
+h2 {
+    color: #FF2F00;
+    font-size: 25px;
+    margin: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #FF2F00;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.informacoes-credenciais a {
+    text-decoration: none;
+    color: #EA0000;
+    font-size: 15px
+}
