@@ -1,0 +1,251 @@
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ion-icon {
+    margin-right: 10px;
+    color: #C9B59C;
+}
+
+body{
+    overflow-y: hidden;
+    background-color: #000000;
+    font-family: Arial;
+}
+
+div#app{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+section#parte_cadastro{
+    overflow-y: scroll;
+    width: 50%;
+    height: 100vh;
+    background-color: #fffefe;
+} 
+
+section#parte_cadastro div{
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#parte_cadastro div h1{
+    font-size: 2.5em;
+    color:rgb(221, 13, 6);
+}
+
+img#logo{
+    text-align:center;
+    width:15%;
+    margin:auto;
+}
+
+section#parte_cadastro form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    overflow-y:auto;
+}
+
+section#parte_cadastro form label{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+}
+
+section#parte_cadastro form input{
+    background-color: none;
+    border: solid #C9B59C 1px;
+    padding: 15px;
+    margin: 5px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 300px;
+    height: 60px;
+}
+
+section#parte_cadastro form fieldset{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    width:100%;
+    flex-direction: row;
+}
+
+section#parte_cadastro form fieldset legend{
+    font-weight: bold;
+}
+
+section#parte_cadastro form fieldset input{
+    width:30px;
+}
+
+.grupo-sexo {
+    border: none;
+    padding: 0;
+    margin-bottom: 15px; 
+}
+
+
+.grupo-sexo legend {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.radio-opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.item-inteiro {
+    width: 100%;
+}
+
+section#parte_cadastro form .input_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    border: solid #C9B59C 1px;
+    border-radius: 20px;
+    padding: 0 15px;
+    margin: 5px 5px 30px 5px;
+}
+
+section#parte_cadastro form .input_wrapper input {
+    flex: 1;
+    width: auto;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+section#parte_cadastro form .input_wrapper .olho_visu {
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+    margin-right: 0;
+}
+
+button#btn {
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    width: 200px;
+    background-color: #FF2F00;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+div#logar_ou_cadastrar a{
+    text-decoration: none;
+    color: #FF2F00;
+}
+
+div#logar_ou_cadastrar a:hover{
+    text-decoration: underline;
+}
+
+
+section#parte_img{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    width: 50%;
+    height: 100vh;
+    background-image: url('../../public/cadastro/fundo_cadastro.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+div#caixa{
+    border-radius: 10px;
+    width:70%;
+    background-color: #0000009d;
+}
+
+div#caixa > p{
+    padding: 10px;
+}
+
+div#caixa div{
+    margin-bottom: 20px;
+}
+
+div#adjetivo1, div#adjetivo3{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+
+div#adjetivo1 div p{
+    padding:5px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #d2652a;
+}
+
+div#adjetivo2 div p{
+    padding:5px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #c72306;
+}
+
+div#adjetivo3 div p{
+    padding:5px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #570909;
+}
+
+div#caixa > div#adjetivo2{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+
+div#caixa div p{
+    font-weight: bold;
+}
+
+div#caixa p{
+    margin:0px 0px 20px 0px;
+    text-align:center;
+    text-indent: 20px;
+    line-height: 30px;
+}
