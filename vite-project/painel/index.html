@@ -11,27 +11,100 @@
       href="../public/global/Logo-Steven_s_Parking_2.svg"
       type="image/x-icon"
     />
+    <script src="../src/js/painel/menu.js" defer></script>
 </head>
 <body>
-    <header>
-        <div>
-            
-        </div>
-        <div>
-            <h1>Visão geral das vagas</h1>
-        </div>
-        <div>
-
-        </div>
-    </header>
-    <main>
-        <aside>
-
-        </aside>
-        <aside>
-
-        </aside>
-    </main>
+    <div id="app">
+        <header>
+            <div class="menu-container">
+                <ion-icon id="btn-menu" name="menu"></ion-icon>
+                <nav id="menu-dropdown" class="escondido">
+                    <ul>
+                        <li><a href="#">Registrar vaga</a></li>
+                        <li><a href="../cadastro/index.html">Deslogar atendente</a></li>
+                        <li><a href="#">Gerenciar vagas</a></li>
+                        <li><a href="../index.html">Sair</a></li>
+                    </ul>
+        </nav>
+            </div>
+            <div id="titulo">
+                <img src="../public/cadastro/car.svg" alt="Imagem de carro para estilo">
+                <h1>Visão geral das vagas</h1>
+            </div>
+            <div>
+                <a href="../perfil/index.html">
+                    <ion-icon name="person"></ion-icon>
+                </a>
+            </div>
+        </header>
+        <main>
+            <aside id="painel">
+                <div class="grid-vagas">
+                    <div class="vaga">0</div>
+                    <div class="vaga">1</div>
+                    <div class="vaga">2</div>
+                    <div class="vaga">3</div>
+                    <div class="vaga">4</div>
+                    
+                    <div class="vaga">5</div>
+                    <div class="vaga">6</div>
+                    <div class="vaga">7</div>
+                    <div class="vaga">8</div>
+                    <div class="vaga">9</div>
+                    
+                    <div class="vaga">10</div>
+                    <div class="vaga">11</div>
+                    <div class="vaga">12</div>
+                    <div class="vaga">13</div>
+                    <div class="vaga">14</div>
+                    
+                    <div class="vaga">15</div>
+                    <div class="vaga">16</div>
+                    <div class="vaga">17</div>
+                    <div class="vaga">18</div>
+                    <div class="vaga">19</div>
+                    
+                    <div class="vaga">20</div>
+                    <div class="vaga">21</div>
+                    <div class="vaga">22</div>
+                    <div class="vaga">23</div>
+                    <div class="vaga">24</div>
+                    
+                    <div class="vaga">25</div>
+                    <div class="vaga">26</div>
+                    <div class="vaga">27</div>
+                    <div class="vaga">28</div>
+                    <div class="vaga">29</div>
+                </div>
+                <div class="controles-fluxo">
+                    <button class="btn-fluxo entrada" title="Saída do estacionamento">
+                        <ion-icon name="arrow-forward"></ion-icon>
+                    </button>
+                    <button class="btn-fluxo saida" title="Entrada do estacionamento">
+                        <ion-icon name="arrow-back"></ion-icon>
+                    </button>
+                </div>
+            </aside>
+            <aside id="descricoes">
+                <div id="tipos_vagas">
+                    <div>
+                        <img src="../public/painel/icon_deficiente.svg" alt="Ícone para identificar pcd">
+                        <p>Vagas para PCD</p>
+                    </div>
+                    <div>
+                        <img src="../public/painel/directions_car.svg" alt="Ícone de carro vermelho para identificar vaga ocupada">
+                        <p>Vagas ocupadas</p>
+                    </div>
+                    <div>
+                        <p><strong>60+</strong> Vagas para idosos</p>
+                    </div>
+                </div>
+                <div>
+                    <p id="aviso">Estacionamento vazio*</p>
+                </div>
+            </aside>
+        </main>
+    </div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
